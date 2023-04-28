@@ -1,0 +1,9 @@
+<template>
+  <lightning-card title="CompositionBasics" icon-name="custom:custom57">
+    <template if:true={contact}>
+      <template for:each={contact} for:item="cont">
+        <c-contact-title contact={cont} key={cont.Name}></c-contact-title>
+      </template>
+    </template>
+  </lightning-card>
+</template>

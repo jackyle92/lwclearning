@@ -1,0 +1,15 @@
+<template>
+  <lightning-card>
+
+    <template if:true={contact}>
+      <a href="#" onclick={handleClick}>
+        <lightning-layout>
+          <img src={contact.Picture__c} alt="Profile Picture" />
+          <lightning-layout-item>
+            {contact.Name}
+          </lightning-layout-item>
+        </lightning-layout>
+      </a>
+    </template>
+  </lightning-card>
+</template>
